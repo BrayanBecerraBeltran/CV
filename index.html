@@ -4,11 +4,669 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icon-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    <!--Swiper-->
+    <link rel="stylesheet" href="Assets/CSS/swiper-bundle.min.css">
+
+    <!--Style-->
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+
     <title>Document</title>
 </head>
 <body>
+    
+    <!--HEADER-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Brayan</a>
 
-  <h1>HOLA MUNDO<h1/>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
 
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> About
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i> Skills
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#qualification" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Recorrido
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#portafolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon nav__icon"></i> Portafolio
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> Contactme
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>      
+
+            <div class="nav__btns">
+
+                <!--Theme-->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!--MAIN-->
+    <main class="main">
+
+    <!--HOME-->
+    <section class="home section" id="home">
+        <div class="home__container container grid">
+            <div class="home__content grid">
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/" target="_blank" class="home__social-icon">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a href="https://www.behance.net/brayanbecerra" target="_blank" class="home__social-icon">
+                        <i class="uil uil-behance-alt"></i>
+                    </a>
+                    <a href="https://github.com/" target="_blank" class="home__social-icon">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0" xmlns="alpha">
+                            <path fill="#57E0B2" d="M45.7,-62.3C59.8,-52.7,72.2,-40.1,78.5,-24.6C84.8,-9.1,85,9.3,78.5,24.4C72.1,39.5,58.9,51.3,44.7,62C30.5,72.7,15.3,82.3,-1.2,84C-17.7,85.6,-35.4,79.4,-47.7,68C-60.1,56.7,-67,40.4,-73.2,23.3C-79.4,6.3,-84.8,-11.5,-81.8,-28.4C-78.8,-45.3,-67.5,-61.3,-52.5,-70.6C-37.4,-79.9,-18.7,-82.4,-1.4,-80.4C15.8,-78.4,31.7,-71.9,45.7,-62.3Z" transform="translate(100 100)" />
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path fill="#57E0B2" d="M45.7,-62.3C59.8,-52.7,72.2,-40.1,78.5,-24.6C84.8,-9.1,85,9.3,78.5,24.4C72.1,39.5,58.9,51.3,44.7,62C30.5,72.7,15.3,82.3,-1.2,84C-17.7,85.6,-35.4,79.4,-47.7,68C-60.1,56.7,-67,40.4,-73.2,23.3C-79.4,6.3,-84.8,-11.5,-81.8,-28.4C-78.8,-45.3,-67.5,-61.3,-52.5,-70.6C-37.4,-79.9,-18.7,-82.4,-1.4,-80.4C15.8,-78.4,31.7,-71.9,45.7,-62.3Z" transform="translate(100 100)" />
+                        <image class="home__blob-img" x='12' y='18' xlink:href="Assets/IMG/Perfil.png"/>
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="home__data">
+                    <h1 class="home__title">Hola, Yo soy Brayan</h1>
+                    <h3 class="home__subtitle">Estudiante de Ingenieria en Multimedia</h3>
+                    <p class="home__description">Conoceme un poco más...</p>
+                
+                    <a href="#contact" class="button button--flex">
+                        Contact Me<i class="uil uil-message button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="home__scroll">
+                <a href="#" class="home__scroll-button button--flex">
+                    <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                    <span class="home__scroll-name">Scroll down</span>
+                    <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                </a>
+            </div>
+
+        </div>  
+
+    </section>
+
+    <!--ABOUT-->
+    <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">¿Quien soy?</span>
+
+        <div class="about__container container grid">
+            <img src="Assets/IMG/About.png" alt="" class="about__img">
+
+            <div class="about__data">
+                <p class="about__description">Mi nombre es Brayan Sebastina Becerra Beltrán, tengo 23 años, actualmente soy estudiante de Ingeniería en Multimedia de octavo semestre en la Universidad Militar Nueva Granada donde recibo formación en distintas áreas del conocimiento computacionales y multimediales.</p>
+            
+                <div class="about__info">
+                    <div>
+                        <span class="about__info-title">03</span>
+                        <span class="about__info-name">Años<br> estudio</span>
+                    </div>
+
+                    <div>
+                        <span class="about__info-title">04</span>
+                        <span class="about__info-name">Proyectos <br> realizados</span>
+                    </div>
+
+                    <div>
+                        <span class="about__info-title">02</span>
+                        <span class="about__info-name">Empresas <br> trabajo</span>
+                    </div>
+                </div>
+
+                <div class="about__buttons"> <!--Hoja de vida en pdf si tengo o trabajos-->
+                    <a download="" href="Assets/IMG/Hoja de vida.pdf" class="button button--flex">
+                        Descarga CV<i class="uil uil-download-alt button__icon"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--SKILLS-->
+    <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">Mis diferentes habilidades</span>
+
+        <div class="skills__container container grid">
+            <div>
+                <!--SKILL 1-->
+                <div class="skills__content skills__open">
+                    <div class="skills__header">
+                        <i class="uil uil-cube skills__icon"></i>
+                        <div>
+                            <h1 class="skills__title">Ambito 3D</h1>
+                            <span class="skills__subtitle">Blender y Maya</span>
+                        </div>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Modelado 3D</h3>
+                                <span class="skills__number">85%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentaje skills__model">
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Animacion 3D</h3>
+                                <span class="skills__number">80%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentaje skills__anima">
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Render</h3>
+                                <span class="skills__number">80%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentaje skills__render">
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            
+                <!--SKILL 2-->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-image-edit skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title">Diseño</h1>
+                            <span class="skills__subtitle">Adobe</span>
+                        </div>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Photoshop</h3>
+                                <span class="skills__number">80%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentaje skills__ph">
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Illustrator</h3>
+                                <span class="skills__number">85%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentaje skills__ai">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>           
+            
+                <!--SKILL 3-->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-video skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title">Edicion de video</h1>
+                            <span class="skills__subtitle">Adobe</span>
+                        </div>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">After Effects</h3>
+                                <span class="skills__number">85%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentaje skills__af">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Premiere Pro</h3>
+                                <span class="skills__number">85%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentaje skills__pr">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!--SKILL 3-->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-window skills__icon"></i>
+                        <div>
+                            <h1 class="skills__title">Paginas web</h1>
+                            <span class="skills__subtitle">UI & UX</span>
+                        </div>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">HTML</h3>
+                                <span class="skills__number">80%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentaje skills__html">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">CSS</h3>
+                                <span class="skills__number">80%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentaje skills__css">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>        
+
+            </div>
+        </div>   
+    </section>
+
+    <!--QUALIFICATION-->
+    <section class="qualification section" id="qualification">
+        <h2 class="section__title">Recorrido</h2>
+        <span class="section__subtitle">Mi viaje personal </span>
+
+        <div class="qualification__container container">
+
+            <div class="qualification__tabs">
+                <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                    <i class="uil uil-graduation-cap qualification__icon"></i>
+                    Educacion
+                </div>
+
+                <div class="qualification__button button--flex" data-target='#work'>
+                    <i class="uil uil-briefcase-alt qualification__icon"></i>
+                    Empleo
+                </div>
+            </div>
+
+            <div class="qualification__sections">
+                
+                <!--QUALIFICATION CONTENIDO 1 ESTUDIOS-->
+                <div class="qualification__content qualification__active" data-content id="education">
+                    <!--QUALIFICATION 1-->
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Estudios primarios</h3>
+                            <span class="qualification__subtitle">Instituto Copesal</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2003 - 2008
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                    </div>
+
+                    <!--QUALIFICATION 2-->
+                    <div class="qualification__data">
+
+                        <div></div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                        <div>
+                            <h3 class="qualification__title">Estudios Secundarios</h3>
+                            <span class="qualification__subtitle">Instituto Copesal</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2009 - 2015
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--QUALIFICATION 3-->
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Tecnico en pre-pensa digital para medios impresos</h3>
+                            <span class="qualification__subtitle">Sena</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2003 - 2008
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                        
+                    </div>
+
+                    
+                    <!--QUALIFICATION 4-->
+                    <div class="qualification__data">
+                        <div></div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <!--<span class="qualification__line"></span>--> 
+                        </div>
+
+                        <div>
+                            <h3 class="qualification__title">Ingenieria en Multimedia</h3>
+                            <span class="qualification__subtitle">Universidad Militar Nueva granada</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2017 (En curso)
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!--QUALIFICATION CONTENIDO 2 EMPLEOS-->
+                <div class="qualification__content" data-content id="work">
+                    <!--QUALIFICATION 1-->
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Auxiliar en ventas</h3>
+                            <span class="qualification__subtitle">Almacen escolar</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2015 - 2019
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                    </div>
+
+                    <!--QUALIFICATION 2-->
+                    <div class="qualification__data">
+                        <div></div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <!--<span class="qualification__line"></span>-->
+                        </div>
+
+                        <div>
+                            <h3 class="qualification__title">Auxiliar en Reparaciones Locativas</h3>
+                            <span class="qualification__subtitle">J.A.C. Aures 2</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2016 (En curso)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--PORTAFOLIO-->
+    <section class="portafolio section" id="portafolio">
+        <h2 class="section__title">Portafolio</h2>
+        <span class="section__subtitle">Trabajos más recientes</span>
+
+        <div class="portafolio__container container swiper">
+            <div class="swiper-wrapper">
+
+                <!--PORTAFOLIO 1-->
+                <div class="portafolio__content grid swiper-slide">
+                    <img src="Assets/IMG/Portafolio1.jpg" alt="" class="portafolio__img">
+
+                    <div class="portafolio__data">
+                        <h3 class="portafolio__title">Dibujo Tecnico</h3>
+                        <p class="portafolio__description">Manejo de diferentes tecnicas de dibujo</p>
+                    
+                        <a href="https://bitacorabsbb.blogspot.com/" target="blank" class="button button--flex button--small portafolio__button">
+                            Más trabajos
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--PORTAFOLIO 2-->
+                <div class="portafolio__content grid swiper-slide">
+                    <img src="Assets/IMG/Portafolio2.jpg" alt="" class="portafolio__img">
+
+                    <div class="portafolio__data">
+                        <h3 class="portafolio__title">Video render</h3>
+                        <p class="portafolio__description">Lorem ipsum dolor, sit amet consecteborum quis commodi quam culpa!</p>
+                    
+                        <a href="https://www.behance.net/brayanbecerra" target="blank" class="button button--flex button--small portafolio__button">
+                            Más trabajos
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!--PORTAFOLIO 3-->
+                <div class="portafolio__content grid swiper-slide">
+                    <img src="Assets/IMG/Portafolio3.JPG" alt="" class="portafolio__img">
+
+                    <div class="portafolio__data">
+                        <h3 class="portafolio__title">Modelos 3D</h3>
+                        <p class="portafolio__description">Lorem ipsum dolor, sit amet consecteborum quis commodi quam culpa!</p>
+                    
+                        <a href="https://www.behance.net/brayanbecerra" target="blank" class="button button--flex button--small portafolio__button">
+                            Más trabajos
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-portafolio-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swiper-portafolio-icon"></i>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </section>
+
+    <!--CONTACT ME-->
+
+    <section class="portafolio section" id="contact">
+        <h2 class="section__title">Contacto</h2>
+        <span class="section__subtitle">Ponte en contacto</span>
+
+        <div class="contact_container container grid">
+            <div>
+                <div class="contact__information">
+                    <i class="uil uil-phone-alt contact__icon"></i>
+                    <div>
+                        <h3 class="contact__title">Número</h3>
+                        <span class="contact__subtitle">313 856 5531 | 537 22 24</span>
+                    </div>
+                </div>
+
+                <div class="contact__information">
+                    <i class="uil uil-envelope contact__icon"></i>
+                    <div>
+                        <h3 class="contact__title">Email</h3>
+                        <span class="contact__subtitle">becerrabeltranb@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="contact__information">
+                    <i class="uil uil-map-marker contact__icon"></i>
+                    <div>
+                        <h3 class="contact__title">Ubicación</h3>
+                        <span class="contact__subtitle">Colombia - Bogotá Cll 130A # 104 - 85</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <form action="" class="contact__form grid">
+                <div class="contact__inputs grid">
+                     <div class="contact__content">
+                         <label for="" class="contact__label">Nombre</label>
+                         <input type="text" class="contact__input">   
+                     </div>
+                     <div class="contact__content">
+                        <label for="" class="contact__label">Email</label>
+                        <input type="email" class="contact__input">   
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <label for="" class="contact__label">Asunto</label>
+                    <input type="text" class="contact__input">   
+                </div>
+                <div class="contact__content">
+                    <label for="" class="contact__label">Mensaje</label>
+                    <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>  
+                </div>
+
+                <div>
+                    <a href="#" class="button button--flex">
+                        Send Message
+                        <i class="uil uil-message button__icon"></i>
+                    </a>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!--END MAIN-->
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Brayan</h1>
+                    <span class="footer_subtitle">Estudiante Ingenieria en Multimedia</span>
+                </div>
+
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com/brayan.beltran.7" target="blank" class="footer__social">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/brayanbecerraa" target="blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UCg-lQMTED3jo9vcuF0tDAgg" target="blank" class="footer__social">
+                        <i class="uil uil-play"></i>
+                    </a>
+                </div>
+            </div>
+
+            /*<p class="footer__copy">Bogota D.C. | Colombia<br>2021</p>
+        </div>
+    </footer>
+
+
+    <!--SCROLL TOP-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--SWIPER-->
+    <script src="Assets/JS/swiper-bundle.min.js"></script>
+    <!--JS-->
+    <script src="Assets/JS/main.js"></script>
 </body>
 </html>
