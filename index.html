@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--Icon-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     
@@ -13,13 +14,20 @@
     <!--Style-->
     <link rel="stylesheet" href="Assets/CSS/style.css">
 
-    <title>Document</title>
+    <title>Bitacora</title>
 </head>
 <body>
     
     <!--HEADER-->
     <header class="header" id="header">
         <nav class="nav container">
+
+            <div class="nav__btns">
+                
+                <!--Theme-->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+            </div>
+
             <a href="#" class="nav__logo">Brayan</a>
 
             <div class="nav__menu" id="nav-menu">
@@ -57,7 +65,7 @@
 
                     <li class="nav__item">
                         <a href="#contact" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i> Contactme
+                            <i class="uil uil-message nav__icon"></i> Contacto
                         </a>
                     </li>
                 </ul>
@@ -65,9 +73,6 @@
             </div>      
 
             <div class="nav__btns">
-
-                <!--Theme-->
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
@@ -82,8 +87,33 @@
 
     <!--HOME-->
     <section class="home section" id="home">
-        <div class="home__container container grid">
-            <div class="home__content grid">
+        <div class="home__container container">
+
+            <div class="home__content">
+
+                <div class="home__data">
+                    <h1 class="home__title">Hola, Yo soy <span>Brayan</span></h1>
+                    <h3 class="home__subtitle">Estudiante de Ingenieria en Multimedia</h3>
+                    <p class="home__description">Conoceme un poco más...</p>
+                
+                </div>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Conoceme más</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="home__content2">
+
+                <div class="home__img">
+                    <img src="Assets/IMG/About.png" alt="">
+                </div>
+
                 <div class="home__social">
                     <a href="https://www.linkedin.com/" target="_blank" class="home__social-icon">
                         <i class="uil uil-linkedin-alt"></i>
@@ -91,41 +121,28 @@
                     <a href="https://www.behance.net/brayanbecerra" target="_blank" class="home__social-icon">
                         <i class="uil uil-behance-alt"></i>
                     </a>
-                    <a href="https://github.com/" target="_blank" class="home__social-icon">
+                    <a href="https://github.com/BrayanBecerraBeltran?tab=repositories" target="_blank" class="home__social-icon">
                         <i class="uil uil-github-alt"></i>
                     </a>
                 </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                        <mask id="mask0" xmlns="alpha">
-                            <path fill="#57E0B2" d="M45.7,-62.3C59.8,-52.7,72.2,-40.1,78.5,-24.6C84.8,-9.1,85,9.3,78.5,24.4C72.1,39.5,58.9,51.3,44.7,62C30.5,72.7,15.3,82.3,-1.2,84C-17.7,85.6,-35.4,79.4,-47.7,68C-60.1,56.7,-67,40.4,-73.2,23.3C-79.4,6.3,-84.8,-11.5,-81.8,-28.4C-78.8,-45.3,-67.5,-61.3,-52.5,-70.6C-37.4,-79.9,-18.7,-82.4,-1.4,-80.4C15.8,-78.4,31.7,-71.9,45.7,-62.3Z" transform="translate(100 100)" />
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path fill="#57E0B2" d="M45.7,-62.3C59.8,-52.7,72.2,-40.1,78.5,-24.6C84.8,-9.1,85,9.3,78.5,24.4C72.1,39.5,58.9,51.3,44.7,62C30.5,72.7,15.3,82.3,-1.2,84C-17.7,85.6,-35.4,79.4,-47.7,68C-60.1,56.7,-67,40.4,-73.2,23.3C-79.4,6.3,-84.8,-11.5,-81.8,-28.4C-78.8,-45.3,-67.5,-61.3,-52.5,-70.6C-37.4,-79.9,-18.7,-82.4,-1.4,-80.4C15.8,-78.4,31.7,-71.9,45.7,-62.3Z" transform="translate(100 100)" />
-                        <image class="home__blob-img" x='12' y='18' xlink:href="Assets/IMG/Perfil.png"/>
-                        </g>
-                    </svg>
-                </div>
-
-                <div class="home__data">
-                    <h1 class="home__title">Hola, Yo soy Brayan</h1>
-                    <h3 class="home__subtitle">Estudiante de Ingenieria en Multimedia</h3>
-                    <p class="home__description">Conoceme un poco más...</p>
                 
-                    <a href="#contact" class="button button--flex">
-                        Contact Me<i class="uil uil-message button__icon"></i>
-                    </a>
+                <div class="home__button">
+                    
+                    <div>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me<i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me<i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
                 </div>
+
             </div>
 
-            <div class="home__scroll">
-                <a href="#" class="home__scroll-button button--flex">
-                    <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                    <span class="home__scroll-name">Scroll down</span>
-                    <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                </a>
-            </div>
+
 
         </div>  
 
@@ -140,7 +157,7 @@
             <img src="Assets/IMG/About.png" alt="" class="about__img">
 
             <div class="about__data">
-                <p class="about__description">Mi nombre es Brayan Sebastina Becerra Beltrán, tengo 23 años, actualmente soy estudiante de Ingeniería en Multimedia de octavo semestre en la Universidad Militar Nueva Granada donde recibo formación en distintas áreas del conocimiento computacionales y multimediales.</p>
+                <p class="about__description">Mi nombre es Brayan Sebastian Becerra Beltrán, tengo 23 años, actualmente soy estudiante de Ingeniería en Multimedia de octavo semestre en la Universidad Militar Nueva Granada donde recibo formación en distintas áreas del conocimiento computacionales y multimediales.</p>
             
                 <div class="about__info">
                     <div>
@@ -426,14 +443,50 @@
                         
                     </div>
 
-                    
                     <!--QUALIFICATION 4-->
                     <div class="qualification__data">
                         <div></div>
 
                         <div>
                             <span class="qualification__rounder"></span>
-                            <!--<span class="qualification__line"></span>--> 
+                            <span class="qualification__line"></span>
+                        </div>
+
+                        <div>
+                            <h3 class="qualification__title">Inglés Nivel 1 - 3</h3>
+                            <span class="qualification__subtitle">Universidad Distrital</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2016 - 2017
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--QUALIFICATION 5-->
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Inglés Nivel 4</h3>
+                            <span class="qualification__subtitle">Universidad Militar Nueva Granada</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2021 (En curso)                            
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                        
+                    </div>
+
+                    <!--QUALIFICATION 6-->
+                    <div class="qualification__data">
+                        <div></div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <!--<span class="qualification__line"></span>-->
                         </div>
 
                         <div>
@@ -548,6 +601,7 @@
                 </div>
             </div>
 
+            <div class="portafolio__pass">
 
             <div class="swiper-button-next">
                 <i class="uil uil-angle-right-b swiper-portafolio-icon"></i>
@@ -558,6 +612,9 @@
 
             <div class="swiper-pagination"></div>
 
+            </div>
+
+
         </div>
     </section>
 
@@ -567,7 +624,7 @@
         <h2 class="section__title">Contacto</h2>
         <span class="section__subtitle">Ponte en contacto</span>
 
-        <div class="contact_container container grid">
+        <div class="contact__container container grid">
             <div>
                 <div class="contact__information">
                     <i class="uil uil-phone-alt contact__icon"></i>
@@ -595,32 +652,38 @@
 
             </div>
 
-            <form action="" class="contact__form grid">
+            <form action="mailto:skrillexkanht@gmail.com" method="POST" class="contact__form grid">
+
                 <div class="contact__inputs grid">
                      <div class="contact__content">
                          <label for="" class="contact__label">Nombre</label>
-                         <input type="text" class="contact__input">   
+                         <input type="text" name="name" class="contact__input" required> 
+
                      </div>
                      <div class="contact__content">
                         <label for="" class="contact__label">Email</label>
-                        <input type="email" class="contact__input">   
+                        <input type="email" name="email" class="contact__input" required> 
+                          
                     </div>
                 </div>
 
                 <div class="contact__content">
                     <label for="" class="contact__label">Asunto</label>
-                    <input type="text" class="contact__input">   
+                    <input type="text" name="asunto" class="contact__input"> 
+                      
                 </div>
                 <div class="contact__content">
-                    <label for="" class="contact__label">Mensaje</label>
-                    <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>  
+                    <label for="" class="contact__label">Mensaje
+                        <textarea name="" id="" cols="0" rows="7" class="contact__input" required></textarea> 
+                    </label>
+                     
                 </div>
 
                 <div>
-                    <a href="#" class="button button--flex">
+                    <button type="submit" class="button button--flex">
                         Send Message
                         <i class="uil uil-message button__icon"></i>
-                    </a>
+                    </button>
                 </div>
 
             </form>
@@ -634,7 +697,8 @@
     <footer class="footer">
         <div class="footer__bg">
             <div class="footer__container container grid">
-                <div>
+                
+                <div class="footer__data">
                     <h1 class="footer__title">Brayan</h1>
                     <span class="footer_subtitle">Estudiante Ingenieria en Multimedia</span>
                 </div>
@@ -654,7 +718,7 @@
                 </div>
             </div>
 
-            /*<p class="footer__copy">Bogota D.C. | Colombia<br>2021</p>
+            <p class="footer__copy">Bogota D.C. | Colombia<br>2021</p>
         </div>
     </footer>
 
